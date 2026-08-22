@@ -31,7 +31,7 @@ Run the application using your IDE or via the command line (mvn spring-boot:run 
 Test the Endpoint:
 
 Open a web browser or use Postman to visit:
-http://localhost:8080/hello
+http://localhost:8081/hello
 
 You should see the output (e.g., "Hello World").
 
@@ -41,7 +41,7 @@ Stop the Spring Boot server once testing is complete.
 
 
 ## Program 
-
+```
 simple-web-server/
 ├── src/
 │   └── main/
@@ -52,9 +52,9 @@ simple-web-server/
 │       └── resources/
 │           └── application.properties
 ├── pom.xml
-
+```
  ### Pom.xml
-
+```xml
 <project xmlns="http://maven.apache.org/POM/4.0.0"
          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 
@@ -91,9 +91,10 @@ simple-web-server/
         </plugins>
     </build>
 </project>
-
+```
 ### DemoApplication.java
 
+```java
 package com.example.demo;
 
 import org.springframework.boot.SpringApplication;
@@ -121,15 +122,16 @@ public class HelloController {
         return "Hello, Spring Boot!";
     }
 }
-
+```
 
 ### application.properties:
 
- server.port=8081
+> server.port=8081
 
 
 
 
 Output:
 
+<img width="1229" height="767" alt="image" src="https://github.com/user-attachments/assets/a7609fc3-4a3d-4e68-bfc6-bc21cf6bdf29" />
 
